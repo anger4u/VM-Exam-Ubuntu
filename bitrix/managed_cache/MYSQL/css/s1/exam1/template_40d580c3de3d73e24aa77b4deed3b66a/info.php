@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/local/templates/exam1/template_styles.css" => "155912307556735",), 'CUR_SEL_CNT' => '558', 'CUR_IE_CNT' => '0'); ?>

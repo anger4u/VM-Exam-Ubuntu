@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/local/templates/exam1/css/reset.css" => "14950300742466","/local/templates/exam1/css/style.css" => "155912307556735","/local/templates/exam1/css/owl.carousel.css" => "14950300744507",), 'CUR_SEL_CNT' => '729', 'CUR_IE_CNT' => '0'); ?>

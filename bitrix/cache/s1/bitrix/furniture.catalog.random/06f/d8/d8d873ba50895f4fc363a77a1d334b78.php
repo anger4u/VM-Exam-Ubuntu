@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001559048348';
-$dateexpire = '001559048528';
+$datecreate = '001559116983';
+$dateexpire = '001559117163';
 $ser_content = 'a:2:{s:7:"CONTENT";s:405:"<div class="special-product">
 	<div class="special-product-title"><a href="/products/1/12/">Флора</a></div>
 	<div class="special-product-image"><a href="/products/1/12/"><img border="0" src="/upload/iblock/295/295194e2f0e92fe92f36c4f6b182f4b0.jpg" width="75" height="62" alt="Флора" title="Флора" /></a></div>
