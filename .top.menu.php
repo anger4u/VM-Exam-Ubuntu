@@ -1,38 +1,52 @@
 <?
 $aMenuLinks = Array(
 	Array(
+		"Главная", 
+		"/", 
+		Array(), 
+		Array("CLASS"=>"main-page", "MENU_TEXT"=>"", "TEXT_COLOR"=>""), 
+		"" 
+	),
+	Array(
 		"Компания", 
 		"company/", 
 		Array(), 
-		Array(), 
+		Array("MENU_TEXT"=>"текст для пункта Компания.", "TEXT_COLOR"=>"color-red"), 
 		"" 
 	),
 	Array(
 		"Новости", 
 		"news/", 
 		Array(), 
-		Array(), 
+		Array("MENU_TEXT"=>"", "TEXT_COLOR"=>""), 
 		"" 
 	),
 	Array(
-		"Продукция", 
+		"Каталог", 
 		"products/", 
 		Array(), 
-		Array(), 
+		Array("MENU_TEXT"=>"", "TEXT_COLOR"=>""), 
 		"" 
 	),
 	Array(
-		"Услуги", 
-		"services/", 
+		"Фотогалерея", 
+		"/", 
 		Array(), 
-		Array(), 
+		Array("MENU_TEXT"=>"", "TEXT_COLOR"=>""), 
 		"" 
 	),
 	Array(
 		"Партнёрам", 
 		"/partnyeram/", 
 		Array(), 
+		Array("MENU_TEXT"=>"", "TEXT_COLOR"=>""), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/contacts/", 
 		Array(), 
+		Array("MENU_TEXT"=>"", "TEXT_COLOR"=>""), 
 		"" 
 	)
 );

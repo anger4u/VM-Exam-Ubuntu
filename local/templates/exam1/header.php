@@ -74,82 +74,40 @@ IncludeTemplateLangFile(__FILE__);
             </div>
         </header>
         <!-- /header -->
+        
         <!-- nav -->
-        <nav class="nav">
-            <div class="inner-wrap">
-                <div class="menu-block popup-wrap">
-                    <a href="" class="btn-menu btn-toggle"></a>
-                    <div class="menu popup-block">
-                        <ul class="">
-                            <li class="main-page"><a href="">Главная</a>
-                            </li>
-                            <li>
-                                <a href="">Компания</a>
-                                <ul>
-                                    <li>
-                                        <a href="">Пункт 1</a>
-                                        <ul>
-                                            <li><a href="">Пункт 1</a>
-                                            </li>
-                                            <li><a href="">Пункт 2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">Пункт 2</a>
-                                    </li>
-                                    <li><a href="">Пункт 3</a>
-                                    </li>
-                                    <li><a href="">Пункт 4</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="">Новости</a>
-                            </li>
-                            <li>
-                                <a href="">Каталог</a>
-                                <ul>
-                                    <li>
-                                        <a href="">Пункт 1</a>
-                                        <ul>
-                                            <li><a href="">Пункт 1</a>
-                                            </li>
-                                            <li><a href="">Пункт 2</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">Пункт 2</a>
-                                    </li>
-                                    <li><a href="">Пункт 3</a>
-                                    </li>
-                                    <li><a href="">Пункт 4</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="">Фотогалерея</a>
-                            </li>
-                            <li><a href="">Партнерам</a>
-                            </li>
-                            <li><a href="">Контакты</a>
-                            </li>
-                        </ul>
-                        <a href="" class="btn-close"></a>
-                    </div>
-                    <div class="menu-overlay"></div>
-                </div>
-            </div>
-        </nav>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:menu",
+            "main",
+            Array(
+                "COMPONENT_TEMPLATE" => "main",
+                "ROOT_MENU_TYPE" => "top",
+                "MENU_CACHE_TYPE" => "A",
+                "MENU_CACHE_TIME" => "3600",
+                "MENU_CACHE_USE_GROUPS" => "Y",
+                "MENU_CACHE_GET_VARS" => array(""),
+                "MAX_LEVEL" => "3",
+                "CHILD_MENU_TYPE" => "left",
+                "USE_EXT" => "N",
+                "DELAY" => "N",
+                "ALLOW_MULTI_SELECT" => "N"
+            )
+        );?>
         <!-- /nav -->
         
     <!-- inner breadcrumbs-->
     <?if($APPLICATION->GetCurPage(false) !== '/'):?>
         <!-- breadcrumbs -->
-        <div class="breadcrumbs-box">
-            <div class="inner-wrap">
-                <a href="">Главная</a>
-                <a href="">Мебель</a>
-                <span>Выставки и события</span>
-            </div>
-        </div>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:breadcrumb",
+            "navchain",
+            Array(
+                "COMPONENT_TEMPLATE" => "navchain",
+                "START_FROM" => "0",
+                "PATH" => "",
+                "SITE_ID" => "s1"
+            )
+        );?>
         <!-- /breadcrumbs -->
     <?endif?>
     <!-- inner breadcrumbs-->
