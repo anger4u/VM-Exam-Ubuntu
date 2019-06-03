@@ -1,0 +1,1 @@
+<?$MESS['DETAIL_BACK'] = '&larr; Back to list'?>
