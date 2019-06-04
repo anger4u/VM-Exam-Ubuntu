@@ -1,12 +1,14 @@
 <?
+$PERM["/"]["*"]="R";
+$PERM["ask"]["6"]="W";
+$PERM["services"]["5"]="W";
+$PERM["rew"]["6"]="W";
 $PERM["test.php"]["*"]="D";
 $PERM["test.php"]["5"]="X";
 $PERM["search"]["5"]="W";
 $PERM["products"]["5"]="W";
-$PERM["services"]["5"]="W";
 $PERM["news"]["5"]="W";
 $PERM["contacts"]["5"]="W";
 $PERM["company"]["5"]="W";
 $PERM["index.php"]["5"]="W";
-$PERM["/"]["*"]="R";
 ?>

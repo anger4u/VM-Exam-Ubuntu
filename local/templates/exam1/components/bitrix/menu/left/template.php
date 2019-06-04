@@ -2,7 +2,9 @@
 <?if (!empty($arResult)):?>
 
 <div class="side-block side-menu">
-	<div class="title-block"><?=GetMessage("T_EXAM_MENU_TITLE")?></div>
+	<div class="title-block <?=$APPLICATION->GetProperty('left_menu_header_color')?>">
+		<?=GetMessage("T_EXAM_MENU_TITLE")?>
+	</div>
 	<div class="menu-block">
 		<ul>
 		<?

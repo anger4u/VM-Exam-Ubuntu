@@ -7,6 +7,7 @@ if (isset($_REQUEST["backurl"]) && strlen($_REQUEST["backurl"])>0)
 
 $APPLICATION->SetTitle("Вход на сайт");
 ?>
+
 <p>Вы зарегистрированы и успешно авторизовались.</p>
 
 <p><a href="<?=SITE_DIR?>">Вернуться на главную страницу</a></p>
